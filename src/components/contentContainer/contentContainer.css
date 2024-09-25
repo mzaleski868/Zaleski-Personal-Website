@@ -3,13 +3,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    margin: 20px;
-    width: 98%;
-    height: 87%;
+    border: 4px;
+    border-color: var(--border-color);
+    border-style: solid;
+    width: 99%;
+    height: 84%;
     position: fixed;
-    background-color: #a5a2a8;
-    border-radius: 15px; /* This creates rounded corners */
+    background-color: var(--content-background-color);
+    border-radius: 12px; /* This creates rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   

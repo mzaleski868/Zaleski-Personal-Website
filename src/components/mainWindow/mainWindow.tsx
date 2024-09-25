@@ -21,8 +21,11 @@ const MainWindow: React.FC<{ stateValue: any }> = ({ stateValue }) => {
       <ContentRow>
         <ContentBox title={'Title'} content={<></>}/>
         <ContentBox title={'Title'} content={<></>}/>
+        <ContentBox title={'Title'} content={<></>}/>
       </ContentRow>
       <ContentRow>
+        <ContentBox title={'Title'} content={<></>}/>
+        <ContentBox title={'Title'} content={<></>}/>
         <ContentBox title={'Title'} content={<></>}/>
         <ContentBox title={'Title'} content={<></>}/>
       </ContentRow>

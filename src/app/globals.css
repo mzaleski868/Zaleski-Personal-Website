@@ -6,8 +6,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #f0f0f0;
-    --background-color-2: #b7d6b2;
-    --background-color-3: #004d06;
+    --background-color-2: #004d06;
+    --background-color-3: #8fb988;
     --button-color-primary: #17852e;
     --foreground-color: #ffffff;
     --content-background-color: #ffffff;

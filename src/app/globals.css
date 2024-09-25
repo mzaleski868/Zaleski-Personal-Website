@@ -5,11 +5,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #7db1be;
-    --hover-color: #caeeff;
-    --foreground-color: #ededed;
+    --background-color: #f0f0f0;
+    --background-color-2: #b7d6b2;
+    --background-color-3: #004d06;
+    --button-color-primary: #17852e;
+    --foreground-color: #ffffff;
     --content-background-color: #ffffff;
-    --border-color: #e6e6e6;
+    --border-color: #dddddd;
   }
 }
 

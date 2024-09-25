@@ -1,0 +1,9 @@
+.main-window {
+  display: flex; /* Use Flexbox if you want to allow for further layout manipulation */
+  flex-direction: column; /* Stack children vertically */
+  width: 100%; /* Take up full width of the parent */
+  height: 100%; /* Take up full height of the parent */
+  padding: 20px; /* Optional: Add some padding */
+  box-sizing: border-box; /* Include padding in width/height calculations */
+  background-color: var(--main-background-color); /* Optional: Define a background color */
+}

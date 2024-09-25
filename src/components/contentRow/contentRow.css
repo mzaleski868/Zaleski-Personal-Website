@@ -1,0 +1,10 @@
+.content-box-container {
+    display: flex; /* Use Flexbox */
+    flex-wrap: wrap; /* Allow items to wrap into new rows */
+    gap: 20px; /* Space between content boxes */
+    height: 100%; /* Take up full height of the parent container */
+    padding: 0; /* Remove padding to use more space (adjust if needed) */
+    margin: 10px;
+    justify-content: flex-start; /* Align items to the start */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}

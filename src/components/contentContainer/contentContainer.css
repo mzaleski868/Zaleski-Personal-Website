@@ -1,27 +1,29 @@
 /* content-window styling */
 .content-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 4px;
-    border-color: var(--border-color);
-    border-style: solid;
-    width: 99%;
-    height: 84%;
-    position: fixed;
-    background-color: var(--content-background-color);
-    border-radius: 12px; /* This creates rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .content-container section {
-    margin-bottom: 20px;
-  }
-  
-  .content-container h2 {
-    margin-bottom: 10px;
-  }
-  
-  .content-container p {
-    margin: 0;
-  }
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center items vertically within the container */
+  /* border: 4px;
+  border-color: var(--border-color);
+  border-style: solid; */
+  padding: 10px;
+  width: 98%;
+  height: 86%;
+  margin-bottom: 34px;
+  position: fixed;
+  background-color: var(--content-background-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-container section {
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.content-container h2 {
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.content-container p {
+  margin: 0; /* No margin for paragraphs */
+}

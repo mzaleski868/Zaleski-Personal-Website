@@ -1,41 +1,45 @@
 "use client"; // This enables client-side functionality
 import React, { useState } from 'react';
-import MainWindow from '@/components/mainWindow/mainWindow';
+import HomePage from '@/components/homePage/homePage';
 import Navbar from '../components/navigationBar/navigationBar';
-import ContentRow from '@/components/contentRow/contentRow';
-import ContentBox from '@/components/contentBox/contentBox';
-import Button from '../components/button/button';
 import Footer from '@/components/footer/footer';
-import Container from '../components/contentContainer/contentContainer'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const App: React.FC = () => {
-  const handleClick = () => {
-    alert('Button clicked!');
-  };
-
   const [stateValue, setStateValue] = useState<string>('Home');
-
   const links = [
   {
-    href: '',
+    href: '/',
     label: 'Home',
   },
   {
-    href: '',
+    href: '/',
     label: 'About',
   },
   {
-    href: '',
+    href: '/',
     label: 'Contact',
   },
   ]
 
   return (
-    <div style={{ paddingTop: '60px', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-      <Navbar brandName={'MZ'} links={links} setLink={setStateValue}/>
-      <MainWindow stateValue={stateValue} />
-      <Footer/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={
+          <div style={{ paddingTop: '60px', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+            <Navbar brandName={'MZ'} links={links} />
+            <HomePage stateValue={stateValue} />
+            <Footer/>
+          </div>
+        }/>
+        <Route path="smart-dashboard" element={
+          <div style={{ paddingTop: '60px', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+          <Navbar brandName={'MZ'} links={links} />
+          <Footer/>
+        </div>
+        }/>
+      </Routes>
+    </Router>
   );
 };
 

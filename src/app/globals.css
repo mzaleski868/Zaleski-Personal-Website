@@ -7,8 +7,9 @@
   :root {
     --background-color: #f0f0f0;
     --background-color-2: #004d06;
-    --background-color-3: #8fb988;
+    --background-color-3: #477440;
     --button-color-primary: #17852e;
+    --hover-color: rgb(172, 171, 147);
     --foreground-color: #ffffff;
     --content-background-color: #ffffff;
     --border-color: #dddddd;

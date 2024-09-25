@@ -1,17 +1,24 @@
 import React from 'react';
-import './navigationBar.css'; // Assuming you create a CSS file for styles
+import './navigationBar.css';
 
-const Navbar = () => {
+interface NavbarProps {
+  brandName: string;
+  links: { href: string; label: string }[];
+}
+
+const Navbar: React.FC<NavbarProps> = ({ brandName, links }) => {
   return (
     <nav className="navbar">
-      <div className="navbar-brand">My Personal Website</div>
+      <div className="navbar-brand">{brandName}</div>
       <ul className="navbar-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        {links.map((link, index) => (
+          <li key={index}>
+            <a href={link.href}>{link.label}</a>
+          </li>
+        ))}
       </ul>
     </nav>
   );
 };
 
-export default Navbar;
+export default Navbar

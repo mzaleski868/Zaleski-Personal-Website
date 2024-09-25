@@ -1,0 +1,26 @@
+/* content-window styling */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    width: 98%;
+    height: 89%;
+    position: fixed;
+    background-color: #a5a2a8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-container section {
+    margin-bottom: 20px;
+  }
+  
+  .content-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  .content-container p {
+    margin: 0;
+  }

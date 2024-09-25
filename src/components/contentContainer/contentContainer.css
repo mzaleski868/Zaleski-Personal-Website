@@ -6,10 +6,10 @@
     padding: 20px;
     margin: 20px;
     width: 98%;
-    height: 89%;
+    height: 87%;
     position: fixed;
     background-color: #a5a2a8;
-    border-radius: 10px;
+    border-radius: 15px; /* This creates rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   

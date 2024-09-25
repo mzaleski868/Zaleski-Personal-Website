@@ -28,7 +28,8 @@ const App: React.FC = () => {
     <div style={{ paddingTop: '60px', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
       <Navbar brandName={'MZ'} links={links}/>
       <Container>
-        <Button text="Click Me!" onClick={handleClick} variant="primary" />
+        {/* <Button text="Click Me!" onClick={handleClick} variant="primary" /> */}
+        <p>Home</p>
       </Container>
     </div>
   );

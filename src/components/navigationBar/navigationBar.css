@@ -5,6 +5,7 @@
     background-color: #a5a2a8;
     border-radius: 15px; /* This creates rounded corners */
     margin: 10px;
+    margin-top: 15px;
     padding: 1rem 2rem;
     width: 98%;
     position: fixed;
@@ -13,8 +14,8 @@
   }
   
   .navbar-brand {
-    color: #fff;
-    font-size: 1.5rem;
+    color: #0e3a18;
+    font-size: 32px;
     font-weight: bold;
   }
   
@@ -31,6 +32,6 @@
   }
   
   .navbar-links a:hover {
-    color: #f0a500;
+    color: #0e3a18;
   }
   

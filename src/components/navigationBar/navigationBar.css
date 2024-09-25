@@ -35,12 +35,12 @@
   }
   
   .navbar-links p {
-    color: #fff;
+    color: var(--background-color);
     text-decoration: none;
     transition: color 0.3s;
   }
   
   .navbar-links p:hover {
-    color: var(--background-color);
+    color: var(--hover-color);
   }
   

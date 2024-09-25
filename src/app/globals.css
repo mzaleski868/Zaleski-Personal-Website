@@ -6,6 +6,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #7db1be;
+    --hover-color: #caeeff;
     --foreground-color: #ededed;
     --content-background-color: #ffffff;
     --border-color: #e6e6e6;

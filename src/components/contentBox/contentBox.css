@@ -15,12 +15,6 @@
   transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
 }
 
-.content-box-title {
-  padding: 4px;
-  font-size: 18px;
-  color: #ffffff; 
-}
-
 .content-box-content {
   font-size: 14px;
   padding: 8px;
@@ -28,8 +22,21 @@
 }
 
 .title-container {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between title and info icon */
+  align-items: center; /* Center items vertically */
   background-color: var(--border-color);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  padding: 4px; /* Add padding for better spacing */
+}
+
+.content-box-title {
+  font-size: 18px;
+  color: #ffffff; 
+}
+
+.info-icon {
+  margin-left: 8px; /* Space between title and icon */
 }

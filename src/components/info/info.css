@@ -1,0 +1,39 @@
+.info-container {
+  display: inline-block;
+  position: relative;
+}
+
+.info-icon {
+  color: white;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%; /* Position the tooltip above the icon */
+  left: 50%; /* Center the tooltip above the icon */
+  transform: translateX(-50%) translateY(-10px); /* Center horizontally and move up */
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip-arrow {
+  position: absolute;
+  bottom: calc(100% - 38px); /* Position the arrow just below the tooltip */
+  left: 55%; /* Center the arrow below the tooltip */
+  transform: translateX(-50%); /* Center horizontally */
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent #f9f9f9; /* Arrow color matching tooltip background */
+  margin-bottom: -10px; /* Adjust this value as needed to align with the icon */
+}
+
+.tooltip-text {
+  color: black; /* Tooltip text color */
+}

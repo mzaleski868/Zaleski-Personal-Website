@@ -1,0 +1,27 @@
+.weather-container {
+  position: relative;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.weather-header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 64px;
+}
+
+.temperature-text {
+  margin: 0.5rem 0;
+}

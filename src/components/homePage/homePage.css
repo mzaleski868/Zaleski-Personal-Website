@@ -1,4 +1,4 @@
-.main-window {
+.home-page {
   display: flex; /* Use Flexbox if you want to allow for further layout manipulation */
   flex-direction: column; /* Stack children vertically */
   width: 100%; /* Take up full width of the parent */

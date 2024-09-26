@@ -1,0 +1,23 @@
+/* Make the header span the full width of the screen */
+.header {
+  width: 100vw;
+  margin-top: 59px;
+  height: 200px;
+  background-image: url('../../background-image-3.jpg');
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+
+.header-title {
+  font-size: 3rem;
+  font-family: "Bodoni Moda SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}

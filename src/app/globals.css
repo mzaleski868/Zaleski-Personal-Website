@@ -6,20 +6,20 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #f0f0f0;
-    --background-color-2: #326937;
-    --background-color-3: #477440;
-    --button-color-primary: #17852e;
+    --background-color-2: #2d509c;
+    --background-color-3: #2d509c;
+    --button-color-primary: #fd5e52;
     --hover-color: rgb(172, 171, 147);
     --foreground-color: #ffffff;
     --content-background-color: #ffffff;
-    --border-color: #dddddd;
+    --border-color: #bdd8df;
   }
 }
 
 html,
 body {
   max-width: 100vw;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   /* overflow: hidden;   Disable scrolling */
   min-height: 100vh; /* Ensures the content area is at least the height of the viewport */
 }

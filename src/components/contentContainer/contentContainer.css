@@ -7,10 +7,7 @@
   border-color: var(--border-color);
   border-style: solid; */
   padding: 10px;
-  width: 98%;
-  height: 86%;
   margin-bottom: 34px;
-  position: fixed;
   background-color: var(--content-background-color);
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

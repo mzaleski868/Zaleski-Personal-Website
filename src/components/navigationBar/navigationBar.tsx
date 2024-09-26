@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
+import React, { Dispatch, SetStateAction } from "react";
 import { useNavigate } from 'react-router-dom';
 import './navigationBar.css';
 
 interface NavbarProps {
   brandName: string;
   links: { href: string; label: string;}[];
+  state: string;
+  setState: Dispatch<SetStateAction<string>>;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ brandName, links }) => {
+const Navbar: React.FC<NavbarProps> = ({ brandName, links, setState, state }) => {
   const handleClick = (link: any) => {
     navigate(link.href)
     setState(link.label)
   }
-  const [state, setState] = useState('Home')
   const navigate = useNavigate();
   return (
     <nav className="navbar">

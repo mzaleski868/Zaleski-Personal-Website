@@ -27,14 +27,14 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={
           <div style={{ paddingTop: '60px', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-            <Navbar brandName={'MZ'} links={links} />
-            <HomePage stateValue={stateValue} />
+            <Navbar brandName={'MZ'} links={links} setState={setStateValue} state={stateValue}/>
+            <HomePage stateValue={stateValue} setState={setStateValue}/>
             <Footer/>
           </div>
         }/>
         <Route path="smart-dashboard" element={
           <div style={{ paddingTop: '60px', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-          <Navbar brandName={'MZ'} links={links} />
+          <Navbar brandName={'MZ'} links={links} setState={setStateValue} state={stateValue}/>
           <Footer/>
         </div>
         }/>

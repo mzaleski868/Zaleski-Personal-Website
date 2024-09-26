@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Dispatch, SetStateAction } from "react";
 import { useNavigate } from 'react-router-dom';
 import './contentBox.css';
 
@@ -6,12 +6,15 @@ interface ContentBoxProps {
   title: string;
   content: React.ReactNode;
   route: string;
+  state: string;
+  setState: Dispatch<SetStateAction<string>>;
 }
 
-const ContentBox: React.FC<ContentBoxProps> = ({ title, content, route }) => {
+const ContentBox: React.FC<ContentBoxProps> = ({ title, content, route, setState, state }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
+    setState(route)
     navigate(route); //navigate to the specified route
   };
 

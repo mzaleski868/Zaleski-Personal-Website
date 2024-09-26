@@ -5,7 +5,8 @@ import ContentRow from '../contentRow/contentRow';
 import ContentBox from '../contentBox/contentBox';
 import SmartClock from "../smartClock/smartClock";
 import WeatherComponent from "../weather/weatherForecast";
-import './homePage.css'; // Importing CSS for styling (optional)
+import Calendar from "react-calendar";
+import './homePage.css';
 
 const HomePage: React.FC<{ stateValue: any, setState: Dispatch<SetStateAction<string>>; }> = ({ stateValue, setState }) => {
   return (
@@ -14,7 +15,7 @@ const HomePage: React.FC<{ stateValue: any, setState: Dispatch<SetStateAction<st
         <ContentRow>
           <ContentBox title={'Weather'} content={<WeatherComponent/>} route={'/smart-dashboard'} setState={setState} state={stateValue} info={true}/>
           <ContentBox title={'Running Clock'} content={<SmartClock/>} route={'/smart-dashboard'} setState={setState} state={stateValue}/>
-          <ContentBox title={'Calendar'} content={<></>} route={'/smart-dashboard'} setState={setState} state={stateValue}/>
+          <ContentBox title={'Calendar'} content={<Calendar/>} route={'/smart-dashboard'} setState={setState} state={stateValue}/>
         </ContentRow>
       </Container>
       <Container>

@@ -1,8 +1,10 @@
 .smart-clock-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  font-size: 24px;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  font-size: 32px;
+  height: 100%; /* Fill the height of the parent container */
 }
 
 .time-container {
@@ -13,7 +15,7 @@
 
 .clock-icon {
   margin-right: 12px;
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .date-container {
@@ -24,5 +26,5 @@
 
 .calendar-icon {
   margin-right: 12px;
-  font-size: 28px;
+  font-size: 32px;
 }

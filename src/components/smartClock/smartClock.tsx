@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { FaCalendarAlt, FaClock } from 'react-icons/fa'; // Importing calendar and clock icons
-import './smartClock.css'; // Import the CSS file
+import { FaCalendarAlt, FaClock } from 'react-icons/fa';
+import './smartClock.css';
 
 const SmartClock: React.FC = () => {
   const [time, setTime] = useState<string>(new Date().toLocaleTimeString());
@@ -9,8 +9,6 @@ const SmartClock: React.FC = () => {
     const timerId = setInterval(() => {
       setTime(new Date().toLocaleTimeString());
     }, 1000);
-
-    // Clean up the interval when the component is unmounted
     return () => clearInterval(timerId);
   }, []);
 
@@ -20,7 +18,7 @@ const SmartClock: React.FC = () => {
   return (
     <div className="smart-clock-container">
       <div className="time-container">
-        <FaClock className="clock-icon" /> {/* Clock icon for time */}
+        <FaClock className="clock-icon" />
         <p>{time}</p>
       </div>
       <div className="date-container">

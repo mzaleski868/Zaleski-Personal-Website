@@ -13,11 +13,10 @@ interface ContentBoxProps {
 }
 
 const ContentBox: React.FC<ContentBoxProps> = ({ title, content, route, setState, info }) => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handleClick = () => {
-    setState(route);
-    navigate(route); // Navigate to the specified route
+    console.log('secret click')
   };
 
   return (

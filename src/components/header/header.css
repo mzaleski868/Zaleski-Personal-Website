@@ -1,7 +1,7 @@
 /* Make the header span the full width of the screen */
 .header {
   width: 100vw;
-  margin-top: 59px;
+  margin-top: 57px;
   height: 200px;
   background-image: url('../../background-image-3.jpg');
   background-size: 100% auto;

@@ -1,8 +1,7 @@
 .content-box {
   flex: 1;
   cursor: pointer;
-  background-color: var(--foreground-color);
-  border-radius: 8px;
+  border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: 0.3s box-shadow, 0.3s background-color; /* Reduced transition time for smoother effect */
 }
@@ -12,13 +11,13 @@
 }
 
 .content-box:hover .title-container {
-  background-color: var(--background-color-3); /* Change to your desired background color */
+  background-color: var(--border-color); /* Change to your desired background color */
   transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
 }
 
 .content-box-title {
   padding: 4px;
-  font-size: 24px;
+  font-size: 18px;
   color: #ffffff; 
 }
 
@@ -29,7 +28,7 @@
 }
 
 .title-container {
-  background-color: var(--background-color-2);
+  background-color: var(--border-color);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;

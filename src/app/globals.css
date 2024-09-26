@@ -8,11 +8,12 @@
     --background-color: #f0f0f0;
     --background-color-2: #2d509c;
     --background-color-3: #2d509c;
-    --button-color-primary: #fd5e52;
+    --button-color-primary: #da6c64;
+    --button-color-hover:#bb4037;
     --hover-color: rgb(172, 171, 147);
     --foreground-color: #ffffff;
     --content-background-color: #ffffff;
-    --border-color: #bdd8df;
+    --border-color: #afafaf;
   }
 }
 

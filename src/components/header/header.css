@@ -4,8 +4,7 @@
   max-width: 100%;
   margin-top: 55px;
   height: 100px;
-  background: var(--background-color-3, #2d509c) url('../../background-image-3.jpg') center / 100% auto no-repeat;
-  display: flex;
+  background: linear-gradient(to left, #65a0f8, #bbbbbb);  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;

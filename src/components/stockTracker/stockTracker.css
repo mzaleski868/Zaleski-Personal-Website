@@ -1,0 +1,170 @@
+/* stockTracker.css */
+
+/* Centering search bar and adding margin */
+.search-bar {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Slightly larger input fields for better visibility */
+.search-input {
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.date-input-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #555;
+  font-size: 16px;
+}
+
+.date-input-label input {
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.stock-error {
+  color: #bb4037;
+  font-size: 14px;
+  font-weight: bold;
+  margin: -18px 0 20px;
+  text-align: center;
+}
+
+/* Loading text styling */
+.loading {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0;
+  color: #333;
+}
+
+/* Flex layout for stock data */
+.stock-data {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+/* Stock item styling */
+.stock-item {
+  flex: 1;
+  min-width: 150px;
+  text-align: center; /* Ensure stock items are centered */
+  margin: 15px auto; /* Center within flex */
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Stock item hover effect */
+.stock-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Titles inside stock-item */
+.stock-item h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+/* Data text */
+.stock-item p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #444;
+}
+
+/* Centering and limiting chart container width */
+.chart-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Centering and improving h2 styling */
+.stock-tracker h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Buttons */
+.stock-tracker button {
+  padding: 12px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Disabled button */
+.stock-tracker button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+/* Hover effect for enabled buttons */
+.stock-tracker button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Date selector alignment */
+.date-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+}
+
+/* Date selector label styling */
+.date-selector label {
+  margin-right: 12px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .search-bar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .stock-item {
+    min-width: 100%;
+    max-width: none;
+  }
+
+  .chart-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .stock-tracker button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}

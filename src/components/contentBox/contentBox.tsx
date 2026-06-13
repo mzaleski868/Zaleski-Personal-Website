@@ -1,6 +1,5 @@
 import React, { Dispatch, SetStateAction } from "react";
 import InfoComponent from "../info/info";
-import { useNavigate } from 'react-router-dom';
 import './contentBox.css';
 
 interface ContentBoxProps {
@@ -15,12 +14,12 @@ interface ContentBoxProps {
 const ContentBox: React.FC<ContentBoxProps> = ({ title, content, route, setState, info }) => {
   // const navigate = useNavigate();
 
-  const handleClick = () => {
-    console.log('secret click')
-  };
+  // const handleClick = () => {
+  //   console.log('secret click')
+  // };
 
   return (
-    <div className="content-box" onClick={handleClick}>
+    <div className="content-box">
       <div className="title-container">
         <p className="content-box-title">{title}</p>
         {info && <InfoComponent information="Built using https://open-meteo.com/" />}

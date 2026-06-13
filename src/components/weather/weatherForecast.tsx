@@ -32,7 +32,7 @@ const WeatherComponent: React.FC = () => {
   const [IconComponent, setIconComponent] = useState<React.ReactNode>(null);
 
   useEffect(() => {
-    const apiUrl = 'https://api.open-meteo.com/v1/forecast?latitude=35.7721&longitude=-78.6386&daily=temperature_2m_max,temperature_2m_min,uv_index_max&timezone=America%2FNew_York';
+    const apiUrl = process.env.NEXT_PUBLIC_WEATHER_API_URL ||  'https://api.open-meteo.com/v1/forecast?latitude=35.7721&longitude=-78.6386&daily=temperature_2m_max,temperature_2m_min,uv_index_max&timezone=America%2FNew_York';
 
     const fetchWeather = async () => {
       try {

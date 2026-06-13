@@ -1,5 +1,4 @@
 import React, { Dispatch, SetStateAction } from "react";
-import { useNavigate } from 'react-router-dom';
 import './navigationBar.css';
 
 interface NavbarProps {
@@ -11,10 +10,8 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ brandName, links, setState, state }) => {
   const handleClick = (link: any) => {
-    navigate(link.href)
     setState(link.label)
   }
-  const navigate = useNavigate();
   return (
     <nav className="navbar">
       <div className="navbar-brand">{brandName}</div>
